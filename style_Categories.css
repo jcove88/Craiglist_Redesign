@@ -21,12 +21,6 @@ img.logo{
     position: absolute;
 }
 
-
-img{
-    height: 150px;
-    width: 150px;
-}
-
 .heading{
     color:#6A2983;
 }
@@ -47,7 +41,7 @@ img{
 
 
 footer{
-    width: 1485px;
+    width: 100vw;
     height: 58px;
     left: 0px;
     bottom: 0;
