@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess Black and Gold Watch</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-BFnKwG1sMPhaf2B28WvKzJ9OfphmK4Iv+HUq4xZaVRgrCiFwJ+9R1GwiSkaN9pX7" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #6A2983;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/peace.png" alt="Logo" width="30" height="30">
+                craigslist
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="form-inline ml-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="search craigslist" aria-label="Search">
+                    <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>    
+	<div class="container mt-5">
+        <div class="row" style="margin-bottom: 2%;">
+            <a href="#" style="text-decoration: none; color: #000;">
+                ⇦ Previous Page
+            </a>              
+        </div>
+		<div class="row">
+			<div class="col-md-6">
+				<img src="img/watch.jpg" alt="Product Image" class="img-fluid" onclick="enlargeImage(this)">
+			</div>
+			<div class="col-md-6">
+				<h1>Guess Black and Gold Watch</h1>
+				<p class="lead">condition: excellent</p>
+				<p class="font-weight-bold">Price: $30</p>
+                <p class="lead">1993 GUESS? women's round black-and-gold wristwatch - works great, just needs new battery ... Casual sporty timepiece with minimalist style, analog readout, dial date ... Shiny gold-tone case with stopwatch-style 15-second intervals overlaid around black watch face, numberless with second hand, Japan MOVT, water resistant, genuine black leather strap</p>
+				<button type="button" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Buy</button>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-MzrDWRh0tDdNsBh/nCmZfqtHz0l+GZckztMx5z5e5m5yiGvP8VvW2jzIl7VYEZrm" crossorigin="anonymous"></script>
+    <script>
+        function enlargeImage(img) {
+          var modal = document.createElement('div');
+          modal.style.position = 'fixed';
+          modal.style.top = '0';
+          modal.style.left = '0';
+          modal.style.width = '100%';
+          modal.style.height = '100%';
+          modal.style.backgroundColor = 'rgba(0,0,0,0.7)';
+          modal.style.display = 'flex';
+          modal.style.justifyContent = 'center';
+          modal.style.alignItems = 'center';
+          modal.style.zIndex = '1';
+        
+          var enlargedImg = document.createElement('img');
+          enlargedImg.src = img.src;
+          enlargedImg.style.maxWidth = '90%';
+          enlargedImg.style.maxHeight = '90%';
+        
+          modal.appendChild(enlargedImg);
+        
+          document.body.appendChild(modal);
+        
+          modal.addEventListener('click', function() {
+            document.body.removeChild(modal);
+          });
+        }
+        </script>
+</body>
+<footer class="fixed-bottom" style="background-color: #6A2983; color: white; padding: 0.5em; text-align: center;">
+	&copy; 2023 craigslist
+    &emsp;
+    <a href="help.html" class="text-light">help</a>
+    &emsp;
+    <a href="#" class="text-light">safety</a>
+    &emsp;
+    <a href="#" class="text-light">privacy</a>
+    &emsp;
+    <a href="#" class="text-light">feedback</a>
+    &emsp;
+    <a href="#" class="text-light">terms</a>
+    &emsp;
+    <a href="#" class="text-light">about</a>
+    &emsp;
+    <a href="#" class="text-light">craigslist app</a>
+    &emsp;
+    <a href="#" class="text-light">hiring</a>
+    &emsp;
+    <a href="#" class="text-light">sitemap</a>
+</footer>
+</html>
